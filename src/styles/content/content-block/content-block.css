@@ -1,0 +1,14 @@
+.content-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 600px;
+  height: 100%;
+  flex-direction: column;
+}
+@media (min-width: 900px) {
+  .content-block {
+    align-items: center;
+    padding: 30px;
+  }
+}/*# sourceMappingURL=content-block.css.map */

@@ -1,0 +1,113 @@
+@import '../../variables/variables.scss';
+
+.main-content_project {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: $text-color;
+
+  .label-text_block {
+    h2 {
+      font-size: 30px;
+      letter-spacing: 1px;
+      font-weight: 400;
+      padding-bottom: 25px;
+      padding-top: 50px;
+    }
+  }
+
+  .list_block {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    position: relative;
+
+    .wrapper {
+      z-index: 1;
+      background: #1d1d20;
+      border-top-left-radius: 7px;
+      flex-direction: column;
+      margin-left: 0;
+      padding: 30px 30px;
+      display: flex;
+      position: relative;
+    }
+
+    &::before {
+      content: " ";
+    width: 90px;
+    height: 90px;
+    background: rgb(3,36,0);
+    background: linear-gradient(135deg, (#032400) 0%, (#137909) 50%, (#00d4ff) 100%);
+    opacity: 1;
+    border-top-left-radius: 8px;
+    transition: all .3s ease-in-out;
+    position: absolute;
+    top: -2px;
+    bottom: 0;
+    left: -2px;
+    }
+
+    button {
+      background-color: $main-bg;
+      border: none;
+      min-height: 40px;
+    }
+
+    a {
+      text-decoration: none;
+      position: relative;
+    }
+
+    span {
+      color: $text-color;
+      font-size: 14px;
+      position: relative;
+      margin-bottom: 15px;
+      margin-left: 0;
+      padding-bottom: 5px;
+      line-height: 1.5;
+
+      &:hover {
+        font-size: 16px;
+      }
+
+      &::before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background: rgb(3,36,0);
+        background: linear-gradient(246deg, rgba(3,36,0,0.4458158263305322) 0%, rgba(19,121,9,0.6222864145658263) 60%, rgba(0,212,255,1) 100%);
+        opacity: 1;
+        transition: all .3s ease-in-out;
+        display: inline-block;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+      }
+
+      &::after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background: rgb(3,36,0);
+        background: linear-gradient(246deg, rgba(3,36,0,0.4458158263305322) 0%, rgba(19,121,9,0.6222864145658263) 60%, rgba(0,212,255,1) 100%);
+        opacity: 1;
+        transition: all .3s ease-in-out;
+        display: inline-block;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  
+  @media (min-width: $breakpoint-lg) {
+    width: 30%;
+    align-content: center;
+    display: flex;
+  }
+}

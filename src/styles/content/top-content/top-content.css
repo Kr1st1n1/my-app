@@ -1,0 +1,8 @@
+.top-main_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.top-main_content .link-icons :nth-child(n) {
+  padding-left: 15px;
+}/*# sourceMappingURL=top-content.css.map */

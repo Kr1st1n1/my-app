@@ -1,0 +1,15 @@
+@import '../../variables/variables.scss';
+
+.content-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 600px;
+  height: 100%;
+  flex-direction: column;
+
+  @media (min-width: $breakpoint-lg) {
+    align-items: center;
+    padding: 30px;
+  }
+}

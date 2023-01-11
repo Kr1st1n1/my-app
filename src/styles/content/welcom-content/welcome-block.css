@@ -1,0 +1,40 @@
+.content-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 900px) {
+  .content-main {
+    flex-direction: row;
+  }
+}
+
+.main-content_welcome {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.main-content_welcome .welcom-cont h2 {
+  font-size: 66px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  padding-bottom: 35px;
+  padding-top: 50px;
+}
+.main-content_welcome .text-cont {
+  border-left: 2px solid palevioletred;
+  padding-left: 25px;
+  line-height: 1.5rem;
+  font-size: 14px;
+  padding-top: 5px;
+}
+.main-content_welcome .text-cont :nth-child(1) {
+  padding-bottom: 10px;
+}
+@media (min-width: 900px) {
+  .main-content_welcome {
+    padding-left: 50px;
+    width: 70%;
+    padding-right: 20px;
+  }
+}/*# sourceMappingURL=welcome-block.css.map */
