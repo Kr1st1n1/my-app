@@ -3,13 +3,15 @@
   flex-direction: column;
   width: 100%;
   color: #d1d1d1;
+  padding-left: 13px;
+  padding-top: 24px;
 }
 .main-content_project .label-text_block h2 {
   font-size: 30px;
   letter-spacing: 1px;
   font-weight: 400;
-  padding-bottom: 25px;
-  padding-top: 50px;
+  padding-bottom: 29px;
+
 }
 .main-content_project .list_block {
   list-style-type: none;
@@ -24,7 +26,8 @@
   border-top-left-radius: 7px;
   flex-direction: column;
   margin-left: 0;
-  padding: 30px 30px;
+  padding-top: 18px;
+  padding-left: 31px;
   display: flex;
   position: relative;
 }
@@ -93,8 +96,8 @@
 }
 @media (min-width: 900px) {
   .main-content_project {
-    width: 30%;
     align-content: center;
     display: flex;
+    width: 34%;
   }
 }/*# sourceMappingURL=projects.css.map */

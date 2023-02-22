@@ -6,7 +6,7 @@ const Card = ({ data, cardIndex }) => {
     <div>
       {data[cardIndex].map(item => (
         <div className='card'>
-        <div className='welcom-cont'>
+          <div className='welcom-cont'>
             <h2>{item.title}</h2>
           </div>
           <div className='text-cont'>

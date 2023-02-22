@@ -9,11 +9,12 @@
   display: flex;
 }
 
-
 .dec-left {
-  background:
-  linear-gradient(to right, palevioletred 8px, transparent 4px) 0 0,
-  linear-gradient(to bottom, palevioletred 8px, transparent 4px) 0 0;
+  // background:
+  // linear-gradient(to right, palevioletred 8px, transparent 4px) 0 0,
+  // linear-gradient(to bottom, palevioletred 8px, transparent 4px) 0 0;
+  background: rgb(118,146,71);
+  background: linear-gradient(330deg, rgba(118,146,71,1) 32%, rgba(50,108,154,1) 76%);
   background-repeat: no-repeat;
   background-size: 100px 100px;
   height:100px;
@@ -23,21 +24,42 @@
   top:0px;
   z-index:999;
 
+  .inner {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: $main-bg;
+    top: 10px;
+    left: 10px;
+    border-top-left-radius: 5px;
+  }
 }
 
-.dec-right {
-  background:
-  linear-gradient(to left, palevioletred 8px, transparent 4px) 100% 100%,
-  linear-gradient(to top, palevioletred 8px, transparent 4px) 100% 100%;
-  background-repeat: no-repeat;
-  background-size: 100px 100px;
-  height:100px;
-  width:100px;
-  position:absolute;
-  right:0px;
-  bottom:0px;
-  z-index:999;
-}
+// .dec-right {
+//   // background:
+//   // linear-gradient(to left, palevioletred 8px, transparent 4px) 100% 100%,
+//   // linear-gradient(to top, palevioletred 8px, transparent 4px) 100% 100%;
+//   background: rgb(118,146,71);
+//   background: linear-gradient(330deg, rgba(118,146,71,1) 32%, rgba(50,108,154,1) 76%);
+//   background-repeat: no-repeat;
+//   background-size: 100px 100px;
+//   height:100px;
+//   width:100px;
+//   position:absolute;
+//   right:0px;
+//   bottom:0px;
+//   z-index:999;
+
+//   .inner-right {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     background: $main-bg;
+//     top: 10px;
+//     left: 10px;
+//     border-top-left-radius: 5px;
+//   }
+// }
 
 .content-container {
   margin: 0 auto;
@@ -45,74 +67,102 @@
   height: 100%;
   padding: 20px 25px;
   align-self: center;
-  /*background:
-  linear-gradient(to right, palevioletred 8px, transparent 4px) 0 0,
-  linear-gradient(to bottom, palevioletred 8px, transparent 4px) 0 0;
-  background-repeat: no-repeat;
-  background-size: 100px 100px;*/
   align-self: flex-start;
   position: relative;
-
 
   @media (min-width: $breakpoint-sm) {
     width: 100%;
     padding: 30px;
-   /* background:
-     linear-gradient(to right, palevioletred 20px, transparent 4px) 0 0,
-    linear-gradient(to left, palevioletred 20px, transparent 4px) 100% 100%,
-    linear-gradient(to bottom, palevioletred 20px, transparent 4px) 0 0,
-    linear-gradient(to top, palevioletred 20px, transparent 4px) 100% 100%;
-    background-repeat: no-repeat;
-    background-size: 300px 300px;*/
     height: 100%;
 
-    .triangle-one {
-      content: '';
-      position: absolute;
-      left: 281px;
-      top: 0;
-      width: 0;
-      height: 0;
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent;
-      border-bottom: 20px solid $main-bg;
-      clear: both;
+      .dec-left {
+        background: linear-gradient(330deg, rgba(118,146,71,1) 32%, rgba(50,108,154,1) 76%);
+        background-repeat: no-repeat;
+        background-size: 300px 300px;
+        height:300px;
+        width:300px;
+        border-top-left-radius: 5px;
+
+        .inner {
+          width: 300px;
+          height: 300px;
+          position: absolute;
+          background: $main-bg;
+          top: 18px;
+          left: 20px;
+          border-top-left-radius: 5px;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0px;
+          top: 280px;
+          width: 0;
+          height: 0;
+          border-left: 20px solid transparent;
+          border-bottom: 20px solid $main-bg;
+          clear: both;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          left: 280px;
+          top: 0px;
+          width: 0;
+          height: 0;
+          border-left: 20px solid transparent;
+          border-bottom: 22px solid $main-bg;
+          clear: both;
+        }
     }
-    .triangle-two {
-      content: '';
-      position: absolute;
-      left: 0px;
-      top: 281px;
-      width: 0;
-      height: 0;
-      border-right: 20px solid $main-bg;
-      border-top: 20px solid transparent;
-      clear: both;
+
+    .dec-right {
+      background: linear-gradient(330deg, rgba(50,108,154,1) 15%, rgba(118,146,71,1) 76%);
+      background-repeat: no-repeat;
+      background-size: 300px 300px;
+      height:300px;
+      width:300px;
+      border-bottom-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      position:absolute;
+      right:0px;
+      bottom:0px;
+      z-index:999;
+
+      .inner-right {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        background: $main-bg;
+        bottom: 18px;
+        right: 20px;
+        border-bottom-right-radius: 5px;
+        }
+      
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 280px;
+        width: 0;
+        height: 0;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $main-bg;
+        clear: both;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        left: 280px;
+        top: 0px;
+        width: 0;
+        height: 0;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $main-bg;
+        clear: both;
+      }
     }
-    // .triangle-three {
-    //   content: '';
-    //   position: absolute;
-    //   left: 1112px;
-    //   top: 396px;
-    //   width: 0;
-    //   height: 0;
-    //   border-left: 20px solid $main-bg;
-    //   border-bottom: 20px solid transparent;
-    //   border-top: 20px solid transparent;
-    //   clear: both;
-    // }
-    // .triangle-four {
-    //   content: '';
-    //   position: absolute;
-    //   left: 832px;
-    //   top: 677px;
-    //   width: 0;
-    //   height: 0;
-    //   border-left: 20px solid white;
-    //   border-bottom: 20px solid transparent;
-    //   border-top: 20px solid transparent;
-    //   clear: both;
-    // }
   }
 
   @media (min-width: $breakpoint-lg) {
@@ -128,3 +178,29 @@
   }
 }
 
+
+
+
+    // .triangle-one {
+    //   content: '';
+    //   position: absolute;
+    //   left: 281px;
+    //   top: 0;
+    //   width: 0;
+    //   height: 0;
+    //   border-left: 20px solid transparent;
+    //   border-right: 20px solid transparent;
+    //   border-bottom: 20px solid $main-bg;
+    //   clear: both;
+    // }
+    // .triangle-two {
+    //   content: '';
+    //   position: absolute;
+    //   left: 0px;
+    //   top: 281px;
+    //   width: 0;
+    //   height: 0;
+    //   border-right: 20px solid $main-bg;
+    //   border-top: 20px solid transparent;
+    //   clear: both;
+    // }

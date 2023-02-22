@@ -16,8 +16,8 @@ const WelcomContent = () => {
           {active === "firstCard" && <Card data={Data} cardIndex={0} title="1"/>}
           {active === "secondCard" && <Card data={Data} cardIndex={1} title="2"/>}
           {active === "thirdCard" && <Card data={Data} cardIndex={2} title="3"/>}
-          {active === "fourCard" && <Card data={Data} cardIndex={3} title="4"/>}
-          {active === "fiveCard" && <Card data={Data} cardIndex={4} title="5"/>}
+          {active === "fourthCard" && <Card data={Data} cardIndex={3} title="4"/>}
+          {active === "fifthCard" && <Card data={Data} cardIndex={4} title="5"/>}
         </div>
       </div>
 
@@ -30,13 +30,13 @@ const WelcomContent = () => {
           <button onClick={() => setActive("firstCard")}><a href="/#"> <span>Lorem ipsum</span> </a></button>
           <button onClick={() => setActive("secondCard")}><a href="/#"> <span>Lorem ipsum</span> </a></button>
           <button onClick={() => setActive("thirdCard")}><a href="/#"> <span>Lorem ipsum</span> </a></button>
-          <button onClick={() => setActive("fourCard")}><a href="/#"> <span>Lorem ipsum</span> </a></button>
-          <button onClick={() => setActive("fiveCard")}><a href="/#"> <span>Lorem ipsum</span> </a></button>
+          <button onClick={() => setActive("fourthCard")}><a href="/#"> <span>Lorem ipsum</span> </a></button>
+          <button onClick={() => setActive("fifthCard")}><a href="/#"> <span>Lorem ipsum</span> </a></button>
         </div>
         </div>
       </div>
     </div>
-      <div>
+    <div>
           <Footer/>
       </div>
     </>

@@ -7,8 +7,12 @@ const MainContent = () => {
     <div className='content-container'>
       
       <Content></Content>
-      <div class="dec-left"></div>
-      <div class="dec-right"></div>
+      <div class="dec-left">
+        <div class="inner"></div>
+      </div>
+      <div class="dec-right">
+      <div class="inner-right"></div>
+      </div>
     </div>
   )
 }

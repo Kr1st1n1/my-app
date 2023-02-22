@@ -3,9 +3,7 @@ import '../../styles/layouts/layout.css';
 
 const Layout = () => {
   return (
-    <div className='content-container'>
-      
-    </div>
+    <div className='content-container'></div>
   )
 }
 
